@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js'></script>
+    <script src="https://kit.fontawesome.com/2454d969d0.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lucas de Almeida Sarmento">
+    <title>Apollo</title>
+</head>
+
+<body>
+
+     <!-- Cabeçalho da página -->
+     <header id="header-top">                
+        <div id="icon-background" class="pre-load"><i id= "icon-header" class="fas fa-paper-plane pre-load"></i></div>
+        <h1 id="h1-header" class="pre-load">Apollo</h1>
+        <p id="p-header" class="pre-load">Apenas um exemplo de site responsivo para fixação de conhecimento.</p>
+    </header>
+
+
+    <!-- Menu hamburguer -->
+    <input type="checkbox" id="hamburguer-check">
+        <label for="hamburguer-check">
+        <div class="hamburguer">
+            <span class="linha-hamburguer"></span>
+        </div>
+        </label>   
+    
+    <div id="container-menu" class="hide">
+        <ul class="menu-small">  
+        <li><a href="#intro" class="link-menu-small">Introdução</a></li>
+        <li><a href="#s1" class="link-menu-small">Primeira seção</a></li>
+        <li><a href="#s2" class="link-menu-small">Segunda seção</a></li>
+        <li><a href="#s3" class="link-menu-small">Terceira seção</a></li>
+      </ul>
+    </div>
+
+
+    <!-- Navegação -->
+    <nav id="nav-top">
+        <ul class="ul-nav">
+            <li class="li-nav"><a href="#intro" class="btn-nav">Introdução</a></li>
+            <li class="li-nav"><a href="#s1" class="btn-nav">Primeira Seção</a></li>
+            <li class="li-nav"><a href="#s2" class="btn-nav">Segunda Seção</a></li>
+            <li class="li-nav"><a href="#s3" class="btn-nav">Terceira Seção</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Conteúdo Principal -->
+    <main id="main-content">
+
+        <!-- Introdução -->
+        <section class="main-section ">
+
+            <div class="intro-section" id="intro">                         
+                <div class="intro-content">
+                    <h2 class="h2-main-section" >Título da Introdução</h2>                    
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni qui quod voluptatibus eum dolorem at, deleniti, dolorum tempora ipsam cumque vitae. Rem consequuntur porro voluptas quae earum laudantium voluptatum laboriosam?</p>
+                    <ul class="ul-main">
+                        <li><a href="" class="btn">Saiba mais</a></li>
+                    </ul>  
+                </div>    
+                <div class="intro-img"><img src="https://www.w3schools.com/html/img_chania.jpg" alt=""></div>   
+            </div>                          
+        </section>       
+
+        <!-- Primeira Seção -->
+        <section class="main-section section-1" id="s1">
+
+            <header class="header-section">
+                <h2 class="h2-main-section" >Título da seção 1</h2>
+            </header>
+
+            <div class="flex-container" id="flex-section1">
+                <div class="flex-item">
+                    <span class="icon-background-s1 bg-i1"> <i class="fas fa-mobile-alt icons-s1 i1"></i></span>
+                    <h3 class="h3-main-section">Legenda da imagem</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores quam mollitia ipsam praesentium voluptates atque eligendi laudantium dolorem optio voluptas deserunt ab autem fugit error non, labore magni modi alias.</p>
+                </div>
+                <div class="flex-item">
+                   <span class="icon-background-s1 bg-i2" > <i class="fas fa-tablet-alt icons-s1 i2"></i></span>
+                    <h3 class="h3-main-section">Legenda da imagem</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores quam mollitia ipsam praesentium voluptates atque eligendi laudantium dolorem optio voluptas deserunt ab autem fugit error non, labore magni modi alias.</p>
+                </div>
+                <div class="flex-item">
+                    <span class="icon-background-s1 bg-i3"><i class="fas fa-laptop icons-s1 i3"></i> </span>
+                    <h3 class="h3-main-section">Legenda da imagem</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores quam mollitia ipsam praesentium voluptates atque eligendi laudantium dolorem optio voluptas deserunt ab autem fugit error non, labore magni modi alias.</p>
+                </div>
+            </div>   
+
+            <ul class="ul-main">
+                <li class="li"><a href="#" class="btn">Saiba mais</a></li>
+            </ul>
+        </section>
+
+        <!-- Segunda Seção -->
+        <section class="main-section section-2" id="s2">
+
+            <header class="header-section">
+                <h2 class="h2-main-section" >Título da seção 2</h2>
+                <p>Donec imperdiet consequat consequat. Suspendisse feugiat congue
+                    posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
+            </header>
+
+            <div class="flex-container cards-container">
+                <div class="flex-item cards card1">
+                    <i class="fas fa-laptop"></i>
+                        <p class="card-info">5,320</p>
+                        <p class="card-title">Blabla</p>
+                </div>
+                <div class="flex-item cards card2">
+                    <i class="fas fa-user"></i>
+                    <p class="card-info">3,201</p>
+                    <p class="card-title">Bleble</p>
+                </div>
+                <div class="flex-item cards card3">
+                    <i class="fas fa-handshake"></i>
+                    <p class="card-info">1,098</p>
+                    <p class="card-title">Blibli</p>
+                </div>
+                <div class="flex-item cards card4">
+                    <i class="fas fa-shield-alt"></i>
+                    <p class="card-info">4,054</p>
+                    <p class="card-title">Bloblo</p>
+                </div>
+                <div class="flex-item cards card5">
+                    <i class="fas fa-star"></i>
+                    <p class="card-info">1,023</p>
+                    <p class="card-title">Blublu</p>
+                </div>
+            </div>
+
+            <p>Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.</p>
+            <ul class="ul-main">
+                <li><a href="#" class="btn">Saiba mais</a></li>
+            </ul> 
+        </section>
+
+
+        <!-- Terceira Seção -->
+        <section class="main-section section-3" id="s3">
+
+            <header class="header-section">
+                <h2 class="h2-main-section">Título da seção 3</h2>
+                <p>Donec imperdiet consequat consequat. Suspendisse feugiat congue posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
+            </header>
+
+            <ul class="ul-main">
+                <li><a href="#" class="btn btn-filled">Comece já!</a></li>
+                <li><a href="#" class="btn">Saiba mais</a></li>
+            </ul>
+        </section>
+    </main>
+
+
+
+    <!-- Rodapé -->
+    <footer id="footer">
+        <div class="container-footer">      
+            <section class="footer-section">
+                <h2 class="h2-footer">Título do Footer</h2>
+                <p class="p-footer">Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
+                <ul class="ul-footer footer-btn">
+                    <li><a href="#" class="btn btn-footer">Saiba mais</a></li>
+                </ul>
+            </section>
+            <section class="footer-section">
+                <h2 class="h2-footer">Contato</h2>
+                <dl class="dl-footer">
+                    <dt class="dl-term">Endereço</dt> <dd class="dl-data">Rua teste, 7. Bairro, Cidade, Estado.</dd>
+                    <dt class="dl-term">Telefone</dt> <dd class="dl-data">(99) 99999-9999</dd>
+                    <dt class="dl-term">E-mail</dt> <dd class="dl-data"><a href="" class="mail-footer">emailteste@emailteste.com</a></dd>
+                </dl>
+                <ul class="ul-footer ul-footer-icon">
+                    <!-- <li class="li"><a href="#" class="btn-icon-footer"><i class="icon-footer fab fa-facebook-square"></i></a></li> -->
+                    <!-- <li class="li"><a href="#" class="btn-icon-footer"><i class="icon-footer fab fa-instagram"></i></a></li> -->
+                    <li><a href="https://www.linkedin.com/in/lucas-de-almeida-sarmento-a1617516a/" target="_blank" class="btn-icon-footer"><i class="icon-footer fab fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/LucasAlmeidaSar" target="_blank" class="btn-icon-footer"><i class="icon-footer fab fa-github"></i></a></li>
+                </ul>            
+            </section>
+        </div>
+        <p class="p-copy">Desenvolvido por: &nbsp;<strong>Lucas de Almeida</strong></p>     
+    </footer>
+    
+   
+    <script src="script.js"></script>
+</body>
+</html>
