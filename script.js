@@ -58,30 +58,30 @@ window.addEventListener('resize', function() {
 
 // JQUERY para Scroll nos links
 
-$('#nav-top a').on('click', function (e) {
-  if (this.hash != '') {
-    e.preventDefault();
-    const hash = this.hash;
+// $('#nav-top a').on('click', function (e) {
+//   if (this.hash != '') {
+//     e.preventDefault();
+//     const hash = this.hash;
 
-    $('html, body')
-      .animate({
-        scrollTop: $(hash).offset().top - 68
-      },800);
-  }
-});
+//     $('html, body')
+//       .animate({
+//         scrollTop: $(hash).offset().top - 68
+//       },800);
+//   }
+// });
 
-$('#container-menu a').on('click', function (e) {
-    if (this.hash !== '') {
-      e.preventDefault();  
-      const hash = this.hash;
+// $('#container-menu a').on('click', function (e) {
+//     if (this.hash !== '') {
+//       e.preventDefault();  
+//       const hash = this.hash;
   
-      $('html, body')
-        .animate({
-          scrollTop: $(hash).offset().top - 10
-        },800);
+//       $('html, body')
+//         .animate({
+//           scrollTop: $(hash).offset().top - 10
+//         },800);
 
-        check.checked = 0;
-        showMenu(false);
-    }
-  });
+//         check.checked = 0;
+//         showMenu(false);
+//     }
+//   });
 
