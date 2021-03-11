@@ -1,0 +1,151 @@
+/* -------- Conteúdo Principal da página -------- */
+#main-content{
+    width: 80%;
+    margin: auto;
+    background-color: var(--cor-primaria); 
+    display:block;            
+}   
+    /* Classe para sumir o main ao clicar no menu hamburguer */
+    #main-content.hide{
+      display: none;              
+    }   
+    
+    /* Introdução */
+    .intro-section{       
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;           
+    }    
+    .intro-img img{          
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;       
+    }    
+    .intro-content{        
+        margin-right: 100px;
+        padding: 10px;
+        text-align: left;     
+    }    
+    .intro-content p{     
+        line-height: 2;
+        margin-bottom: 80px;
+    }
+    .intro-content ul{     
+        justify-content: flex-start;
+    }      
+    .intro-section .h2-main-section::after{
+        margin: 0.7em 0 0 0;
+        width: 150px;
+    }   
+    
+
+/* -------- Primeira seção --------*/ 
+.icon-background-s1{
+  background-color: var(--cor-opaca);
+  border: 1px solid var(--cor-terciaria);
+  border-radius: 50%;        
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+    .bg-i1{
+        box-shadow: inset 0 0 5px var(--card-3),0 0 0 9px var(--cor-primaria), 0 0 5px 10px var(--card-3);       
+    }
+    .bg-i2{
+        box-shadow: inset 0 0 5px var(--card-1), 0 0 0 9px var(--cor-primaria), 0 0 5px 10px var(--card-1);
+    }
+    .bg-i3{
+        box-shadow: inset 0 0 5px var(--card-5), 0 0 0 9px var(--cor-primaria), 0 0 5px 10px var(--card-5);
+    }
+    .icons-s1{        
+        font-size: 5rem;
+    }
+    .i1{        
+        color: var(--card-3);
+    }
+    .i2{        
+        color: var(--card-1);
+    }
+    .i3{        
+        color: var(--card-5);
+    }   
+    .section-1 ul{
+        margin-top: 50px;
+    }
+
+/* -------- Segunda Seção -------- */
+
+.section-2 .header-section p{
+    font-size: 1.35rem;
+    width: 65%;
+    color: var(--cor-escura);   
+    margin-bottom: 50px; 
+}
+    /* Estilizando os cards */
+    .cards-container{
+        margin-bottom: 50px;
+    }
+    .cards{
+        height: 200px;    
+    }
+    .card-info, .card-title, .cards i{
+        line-height: normal;
+    }
+    .card1{
+        border-radius: 5px 0 0 5px;
+        background-color: var(--card-1);
+        width: 25%; 
+    }
+    .card2{
+        background-color: var(--card-2);
+        width: 25%;
+    }
+    .card3{
+        background-color: var(--card-3);
+        width: 25%;
+    }
+    .card4{
+        background-color: var(--card-4);
+        width: 25%;
+    }
+    .card5{
+        border-radius: 0 5px 5px 0;
+        background-color: var(--card-5);
+        width: 25%;
+    }
+    .cards-container i, .cards-container p{
+        color: var(--cor-primaria);    
+        padding: 0;
+    }
+    .cards-container i{
+        margin-bottom: 5px;
+        font-size: 2rem;
+    }
+    .card-info{
+        font-size: 2.3rem;
+    }
+    .card-title{
+        font-size: 1.3rem;
+    }
+    .section-2 ul{
+        margin-top: 70px;
+    }
+
+/* -------- Terceira Seção -------- */
+
+.section-3 p{
+    color: var(--cor-escura);
+    margin: 0 auto 35px auto;
+    font-size: 1.2rem;
+    width: 65%;
+}
+    .section-3 .h2-main-section {
+        margin-bottom: 30px;
+    }
+    .section-3 .btn{
+        margin-right: 20px;
+    }

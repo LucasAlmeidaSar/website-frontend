@@ -1,0 +1,77 @@
+ /* -------- Cabeçalho da Página -------- */
+ #header-top{
+    width: 80%;
+    margin: auto;
+    height: 550px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+}                 
+    /* Fundo do ícone */
+    
+     /* Classe para sumir o main ao clicar no menu hamburguer */
+     #icon-background.hide{
+        display: none;     
+    } 
+    #icon-background{
+        position: relative;
+        width: 100px;
+        background: var(--fundo-icone-header);
+        height: 100px;
+        border-radius: 50%;
+        margin-bottom: 30px;
+        opacity: 1;
+        transform: scale(1);
+        transition: all 1.5s ease;
+    }
+
+    #icon-background:hover #icon-header{
+        transform: translate(-58%, -50%) scale(1) rotate(-360deg);
+    }
+
+    #icon-background.pre-load{
+        opacity: 0;
+        transform: scale(.7);
+    }
+    
+    /* Ícone */
+    #icon-header{
+        color: var(--icone-header);
+        font-size: 2.5rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        opacity: 1;
+        transform: translate(-58%, -50%) scale(1);
+        transition: all 1.5s ease;        
+    }
+   
+    
+    #icon-header.pre-load{              
+        transform: translate(-58%, -50%) scale(0) rotate(90deg);          
+        opacity: 0;                    
+    }
+
+    /* Título do Header */
+    #h1-header{
+        color: var(--cor-primaria);
+        margin-bottom: 10px;
+        opacity: 1;        
+        transition: all 1.5s ease .7s;
+    }
+    #h1-header.pre-load{
+       opacity: 0;     
+    }
+
+    /* Parágrafo */
+    #p-header{
+        margin-top: 15px;
+        font-size: 1.25rem;
+        color: var(--cor-opaca);
+        opacity: 1;        
+        transition: all 1.5s ease .7s;
+    }
+    #p-header.pre-load{
+       opacity: 0;       
+    }

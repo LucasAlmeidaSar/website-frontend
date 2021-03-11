@@ -1,0 +1,109 @@
+/* ---------------- Footer ---------------- */
+    
+#footer{
+    width: 80%;
+    margin: 80px auto 100px auto;    
+}
+ /* Classe para sumir o main ao clicar no menu hamburguer */
+ #footer.hide{
+    display: none;     
+}   
+     /* Tipografia */
+     .h2-footer, .btn-footer, .btn-icon-footer, .dl-term{
+        color: var(--cor-primaria);
+    }
+    .p-footer, .dl-data, .mail-footer, .link-footer, .p-copy{
+        color: var(--cor-clara);
+    }    
+    .btn-icon-footer{
+        font-size: 2rem;
+    }
+    .dl-term{
+        font-weight: bold;
+    }
+
+    /* Container das seções */
+    .container-footer{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    /* Seções */
+    .footer-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        margin: 0 40px; 
+    }   
+
+    /* Container da DL */
+    .dl-footer{
+        align-self: flex-start;
+        display: grid;
+        grid-template-columns: 100px 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+    }    
+
+    /* Títulos */
+    .h2-footer{
+        margin-bottom: 30px;
+        align-self: flex-start;
+    }
+
+    /* Botões */
+    .btn-footer{
+        display: block;
+        border: 1px solid var(--cor-clara);
+        box-shadow: none;
+        margin: 35px 0;     
+        transition: all .3s ease;   
+    }
+    .btn-footer:hover{
+        border: 1px solid var(--cor-clara);        
+        background-color: var(--fundo-icone-footer-hover);
+    }
+    .ul-footer{        
+        align-self: flex-start;
+    }    
+    .btn-icon-footer{   
+        position: relative;     
+        display: block;
+        margin: 60px 20px 50px 0;  
+        background-color: var(--fundo-icone-footer);
+        border: 1px solid var(--cor-clara);
+        width: 60px;
+        height: 60px;      
+        border-radius: 50%;
+        transition: all .3s ease;  
+    }
+    .btn-icon-footer:hover{
+        background-color: var(--fundo-icone-footer-hover);
+    }
+    .icon-footer{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }    
+    .link-footer, .mail-footer{
+        border-bottom: 1px dotted var(--cor-primaria);
+        transition: color .3s ease;  
+    }
+    .link-footer:hover, .mail-footer:hover{
+        color: var(--cor-primaria);
+        border-bottom: 0px dotted var(--cor-primaria);
+    }
+    
+    /* Parágrafos */
+    .p-footer{
+        text-align: justify;
+    }
+    .p-copy{
+        margin-top: 30px;
+        text-align: center;
+    }  
+    

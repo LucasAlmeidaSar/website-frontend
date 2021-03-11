@@ -1,0 +1,37 @@
+ /* -------- Barra de navegação Horizontal -------- */
+ .nav-lg{    
+    height: 65px;
+    width: 80%;
+    margin: auto;   
+    background: var(--nav);   
+    border-radius: 5px 5px 0 0;     
+    position: sticky;
+    top: 0;
+    z-index: 9;
+}
+    .menu-lg{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .li-nav{
+        list-style-type: none;
+    }
+
+    .btn-nav-lg{          
+        font-size: 1rem;
+        border-radius: 8px;
+        padding: 9px 20px;
+        background-color: var(--btn-nav) ;
+        margin-right: 15px;
+        transition: all .3s ease;
+
+            &:hover, &:active{
+                background: var(--btn-preenchido);
+                color: var(--cor-primaria);
+            }    
+    }
+    

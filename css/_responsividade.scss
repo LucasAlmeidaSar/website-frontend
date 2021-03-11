@@ -1,0 +1,244 @@
+/* -------------------- Responsividade -------------------- */
+    
+    /* -------- Laptop -------- */
+    @media only screen and (max-width: 1025px){
+        /* Margem da página geral */
+        #header-top, #nav-top, #main-content, footer{
+          width: 90%;
+        }
+        
+        /* Tipografia geral */
+        h1{   
+          font-size: 2.5rem ;   
+        }
+        .h2-main-section{
+            font-size: 1.7rem;       
+        }
+        .h3-main-section{
+            font-size: 1.5rem;       
+        }
+        #p-header{
+            font-size: 1.1rem;
+        }
+        .section-2 .header-section p{
+           font-size: 1.1rem;   
+       }
+      .section-3 p{        
+            font-size: 1.1rem;       
+        }        
+      
+        /* Primeira Seção - deixar duas divs em cima e uma em baixo */
+        #flex-section1{
+          flex-wrap: wrap;  
+        }
+        /* Segunda Seção - Reduzir tamanho da fonte dos elementos de card */
+      .cards-container i{        
+            font-size: 1.7rem;
+        }
+        .card-info{
+            font-size: 2rem;
+        }
+        .card-title{
+            font-size: 1rem;
+        }
+      /* Footer - Reduzir margem das seções */  
+      .footer-section{
+        margin: 0 20px; 
+      }
+    }
+    
+    
+    /* -------- Tablet -------- */
+    
+    @media only screen and (max-width: 860px){
+      /* Header */
+      #header-top{
+        height: 450px;
+      }     
+      /* Seções do Main */
+      .main-section{
+        padding: 50px 30px;
+      }
+      
+      /* Seção Introdução - Imagem em cima e texto em baixo */
+      .intro-section{
+        flex-direction: column-reverse;
+      }
+       .intro-img img{                 
+            margin-bottom: 30px;        
+        }    
+        .intro-content{        
+            margin-right: 0;
+            padding: 0;           
+        }    
+      .intro-section ul{    
+        justify-content: center;
+      }
+      .intro-section .h2-main-section{
+        text-align: center;
+        position: relative;
+      }
+      .intro-section .h2-main-section:after{
+        position: absolute;
+        top:30px;    
+        left:50%;
+        transform: translateX(-50%);
+      }
+      
+       /* Primeira Seção - Diminuir margin título */
+      .section-1 .h2-main-section{
+        margin-bottom: 10px;
+      }
+      
+      .section-1 .flex-item{
+        padding-top:0;
+      }
+      
+      /* Segunda Seção - Diminuir container dos cards */
+      .section-2 .header-section p{
+        width: 90%;
+      }
+      .cards{
+            height: 150px;    
+        }
+      .cards-container i{        
+            font-size: 1.6rem;
+       }
+      .card-info{
+        font-size: 1.8rem;
+      }
+      .card-title{
+        font-size: 1rem;
+      }
+      
+      /* Segunda Seção - Diminuir container dos cards */
+      .section-3 .header-section p{
+        width: 90%;
+      }
+      
+      /* Footer - Diminuir tamanho*/
+      footer{
+        margin: 70px auto 50px auto; 
+      }
+      .h2-footer{
+        font-size: 1.5rem;
+      }  
+      .p-footer, .dl-term, .dl-data{
+        font-size: .9rem;
+      }
+      .btn-footer{
+        margin-top: 40px;
+      }
+      
+    }
+    
+    
+    /* -------- Tablet - Smartphone -------- */
+    
+    @media only screen and (max-width: 730px){
+      /* Header - diminuir o tamanho ainda mais */
+      #header-top{
+        height: 400px;
+      }
+      /* Barra de navegação - Some para o hamburguer aparecer */
+      #nav-top{
+        display:none;
+      }  
+       /* Main - Add border-radius */
+      #main-content{
+        border-radius: 5px;
+      }  
+      /* Segunda Seção - Container dos cards será uma coluna */  
+      .cards-container{
+        flex-direction: column;   
+      } 
+      .cards{
+        width: 70%;
+        margin: auto;
+        height: 200px;
+      }
+      .cards-container i{        
+        font-size: 2rem;
+       }
+      .card-info{
+        font-size: 2.4rem;
+      }
+      .card-title{
+        font-size: 1.3rem;
+      }
+      .card1{
+        border-radius: 10px 10px 0 0;    
+      }
+      .card5{
+        border-radius: 0 0 10px 10px;    
+      }
+      
+      /* Footer - Container será uma coluna */ 
+      .container-footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .footer-section{
+        width: 100%;
+      }
+      .h2-footer, .ul-footer, .dl-footer{
+        align-self: center;
+      }
+       .h2-footer{
+        font-size: 1.65rem;
+      }  
+      .p-footer, .dl-term, .dl-data{
+        font-size: 1.05rem;
+      }
+    }
+    
+    /* -------- Smartphone L -------- */
+    @media only screen and (max-width: 426px){ 
+      
+    /*   Header */
+      #p-header{
+        width: 80%;
+        font-size: .9rem;
+        text-align: center;
+      }       
+
+    /*   Intro seção */
+    .intro-img img{          
+        width: 300px;
+        height: 300px;           
+    }    
+      
+    /*   Primeira seção */
+      .flex-item{
+        padding: 0;
+      }
+      
+    /*   Segunda seção */
+      .section-2 .header-section p,
+      .section-3 .header-section p{
+        width: 100%;
+      }
+      .cards{
+        width: 100%;
+        margin: auto;
+        height: 180px;
+      }
+         
+      
+      .ul-main, .footer-btn{
+        width: 100%;
+        flex-direction: column;    
+      }
+      .ul-main a, .ul-footer a{
+        display:block; 
+        text-align: center;
+      }  
+      
+    /*   Terceira seção */  
+      .section-3 .btn{
+            margin-right: 0;
+        }      
+     
+      
+    }
