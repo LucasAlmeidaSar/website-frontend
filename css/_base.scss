@@ -1,5 +1,5 @@
-/* -------- Paleta de cores -------- */
 :root{
+    /* -------- Paleta de cores -------- */
     --gradient-fundo: linear-gradient(60deg, #cc208e 0%, #6713d2 100%);
     --gradient-after: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
     --cor-primaria: white;          
@@ -27,54 +27,69 @@
     --fundo-icone-footer-hover: rgba(255,255,255,.3);  
     --menu-hamburguer: #B6D3FF;  
     --linha-hamburguer: #480063;
-    }    
+
+    // Unidades gerais
+    --larguraGlobal: 80%;
+    --transicaoPadrao: all .3s ease;
+    }       
+
+
+
     
-    /* -------- Plano de fundo -------- */
     body{
-        background: var(--gradient-fundo);   
+        background: var(--gradient-fundo);  
+
         /* Tipografia */
-        font-family: "Source Sans Pro", sans-serif;       
+        font-family: "Source Sans Pro", sans-serif;   
+
+
+        /* -------- Ajustes Gerais -------- */        
+        h1{   
+            font-size: 3rem ;   
+        }
+        h2{
+            color: var(--cor-escura);
+            font-size: 1.75rem;
+        }
+        h3{
+            color: var(--cor-escura);
+            font-size: 0.875rem;
+        }
+        ul{
+            display: flex;
+            justify-content: center;      
+        }
+        li{
+            list-style-type: none;
+        }
+        a{
+            text-decoration: none;
+            color: var(--cor-escura);
+        }
+        p{
+            line-height: 2;
+            color: var(--cor-media-escura);
+            text-align: justify;
+        }
     }
     
-    /* -------- Ajustes Gerais -------- */
-    h1{   
-        font-size: 3rem ;   
-    }
-    h2{
-        color: var(--cor-escura);
-        font-size: 1.75rem;
-    }
-    h3{
-        color: var(--cor-escura);
-        font-size: 0.875rem;
-    }
-    ul{
-        display: flex;
-        justify-content: center;      
-    }
-    li{
-        list-style-type: none;
-    }
-    a{
-        text-decoration: none;
-        color: var(--cor-escura);
-    }
-    p{
-        line-height: 2;
-        color: var(--cor-media-escura);
-        text-align: justify;
-    }
+    
+    
+
     .header-section{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flexCenter; 
         flex-direction: column;     
-    } 
+    }
+    
+    
+
+
+
     .main-section{
         padding: 75px 50px;
         width:100%;   
         border-bottom: 1px solid var(--cor-terciaria);    
-    }
+
         .h2-main-section{
             font-size: 2rem;
             letter-spacing: 1px;   
@@ -97,7 +112,14 @@
             color: var(--cor-media-escura);
             margin-bottom: 20px;
         }
+    }
+        
     
+
+
+
+
+
     .btn{                
         background-color: var(--btn-vazio);
         border-radius: 5px;
@@ -105,33 +127,45 @@
         box-shadow: 0 0 5px var(--box-shadow-2); 
         transition: all .3s ease; 
         margin-bottom: 10px;
-    }
-        .btn:hover{
+
+        &:hover{
             background-color: var(--btn-preenchido);
             color: var(--cor-primaria);
-        }
-        .btn-filled{
-            box-shadow: 0 0 5px var(--box-shadow-1); 
-            background: var(--btn-preenchido);
-            color: var(--cor-primaria);    
-        }
-        .btn-filled:hover{
+        }      
+        
+    }
+
+    .btn-filled{
+        box-shadow: 0 0 5px var(--box-shadow-1); 
+        background: var(--btn-preenchido);
+        color: var(--cor-primaria);    
+
+        &:hover{
             background: var(--btn-preenchido-hover);  
         }
+    }
+        
+
+
+
+
+    
       
     .flex-container{
-        display: flex;
-        justify-content: center;
+        @include flexCenter;        
         align-items: flex-start;
-        width: 100%;
         flex-direction: row;
+        width: 100%;       
     }
-        .flex-item{
-            padding: 30px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
-    
+
+    .flex-item{
+        @include flexCenter;
+        padding: 30px;            
+        flex-direction: column;
+    }
+
+    .flex-wrap{
+        @include flexCenter;
+        flex-wrap: wrap;
+    }
    

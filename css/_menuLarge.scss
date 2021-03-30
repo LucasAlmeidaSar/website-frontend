@@ -1,7 +1,7 @@
  /* -------- Barra de navegação Horizontal -------- */
  .nav-lg{    
+    width: var(--larguraGlobal);
     height: 65px;
-    width: 80%;
     margin: auto;   
     background: var(--nav);   
     border-radius: 5px 5px 0 0;     
@@ -10,11 +10,9 @@
     z-index: 9;
 }
     .menu-lg{
+        @include flexCenter; 
         height: 100%;
         width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
     .li-nav{
@@ -27,7 +25,7 @@
         padding: 9px 20px;
         background-color: var(--btn-nav) ;
         margin-right: 15px;
-        transition: all .3s ease;
+        transition: var(--transicaoPadrao);
 
             &:hover, &:active{
                 background: var(--btn-preenchido);

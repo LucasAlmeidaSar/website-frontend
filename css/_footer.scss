@@ -1,55 +1,60 @@
 /* ---------------- Footer ---------------- */
     
 #footer{
-    width: 80%;
+    width: var(--larguraGlobal);
     margin: 80px auto 100px auto;    
-}
- /* Classe para sumir o main ao clicar no menu hamburguer */
- #footer.hide{
-    display: none;     
-}   
+
+    &.hide{  display: none;  } 
+
      /* Tipografia */
-     .h2-footer, .btn-footer, .btn-icon-footer, .dl-term{
+    .h2-footer, 
+    .btn-footer, 
+    .btn-icon-footer, 
+    .dl-term{
         color: var(--cor-primaria);
     }
-    .p-footer, .dl-data, .mail-footer, .link-footer, .p-copy{
+
+
+    .p-footer, 
+    .dl-data, 
+    .mail-footer, 
+    .link-footer, 
+    .p-copy{
         color: var(--cor-clara);
-    }    
-    .btn-icon-footer{
-        font-size: 2rem;
     }
-    .dl-term{
-        font-weight: bold;
-    }
+    
+    .btn-icon-footer{  font-size: 2rem;  }
 
-    /* Container das seções */
-    .container-footer{
-        display: flex;
-        justify-content: center;
+    .dl-term{  font-weight: bold;  }
+
+
+     /* Container das seções */
+     .container-footer{
+        @include flexCenter;
         align-items: flex-start;
+
+        /* Seções */
+        .footer-section{
+            @include flexCenter;       
+            flex-direction: column;         
+            width: 50%;
+            margin: 0 40px; 
+
+            /* Container da DL */
+            .dl-footer{
+                align-self: flex-start;
+                display: grid;
+                grid-template-columns: 100px 1fr;
+                grid-template-rows: 1fr 1fr;
+                gap: 20px;
+            } 
+
+
+        } 
     }
 
-    /* Seções */
-    .footer-section{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 50%;
-        margin: 0 40px; 
-    }   
-
-    /* Container da DL */
-    .dl-footer{
-        align-self: flex-start;
-        display: grid;
-        grid-template-columns: 100px 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 20px;
-    }    
-
-    /* Títulos */
-    .h2-footer{
+     /* Títulos */
+     .h2-footer{
         margin-bottom: 30px;
         align-self: flex-start;
     }
@@ -60,7 +65,7 @@
         border: 1px solid var(--cor-clara);
         box-shadow: none;
         margin: 35px 0;     
-        transition: all .3s ease;   
+        transition: var(--transicaoPadrao);   
     }
     .btn-footer:hover{
         border: 1px solid var(--cor-clara);        
@@ -78,7 +83,7 @@
         width: 60px;
         height: 60px;      
         border-radius: 50%;
-        transition: all .3s ease;  
+        transition: var(--transicaoPadrao);  
     }
     .btn-icon-footer:hover{
         background-color: var(--fundo-icone-footer-hover);
@@ -107,3 +112,17 @@
         text-align: center;
     }  
     
+
+
+}
+
+  
+    
+
+   
+
+      
+
+       
+
+   

@@ -4,7 +4,7 @@
     @media only screen and (max-width: 1025px){
         /* Margem da página geral */
         #header-top, #nav-top, #main-content, footer{
-          width: 90%;
+          width: calc(var(--larguraGlobal) + 10%);
         }
         
         /* Tipografia geral */
@@ -96,7 +96,7 @@
       
       /* Segunda Seção - Diminuir container dos cards */
       .section-2 .header-section p{
-        width: 90%;
+        width: calc(var(--larguraGlobal) + 10%);
       }
       .cards{
             height: 150px;    
@@ -111,9 +111,9 @@
         font-size: 1rem;
       }
       
-      /* Segunda Seção - Diminuir container dos cards */
+      /* Terceira Seção - Diminuir container dos cards */
       .section-3 .header-section p{
-        width: 90%;
+        width: calc(var(--larguraGlobal) + 10%);
       }
       
       /* Footer - Diminuir tamanho*/
